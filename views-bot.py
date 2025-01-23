@@ -6,6 +6,7 @@ import time
 url = input("Enter url: ")
 duration = input("Enter duration: ")
 amount = input("Enter amout of loops: ")
+yourMail = input("Enter your mail: ")
 yourPassword = input("Enter password: ")
 
 for i in range(int(amount)):
@@ -17,7 +18,7 @@ for i in range(int(amount)):
     searchbox.click()
     time.sleep(2)
     searchbox = driver.find_element(By.XPATH, '//*[@id="identifierId"]').click()
-    driver.find_element(By.XPATH, '//*[@id="identifierId"]').send_keys('johnny11krocker@gmail.com')
+    driver.find_element(By.XPATH, '//*[@id="identifierId"]').send_keys('yourMail')
     time.sleep(2)
     searchbox = driver.find_element(By.XPATH, '//*[@id="identifierNext"]/div/button').click()
     time.sleep(5)
